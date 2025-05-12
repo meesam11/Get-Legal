@@ -1,195 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Get Legal | Tax & Financial Solutions</title>
-  <link href="styles.css" rel="stylesheet" />
-</head>
-<body>
-  <header>
-    <h1>Get Legal</h1>
-    <p>All finance problems, one solution – <strong>Get Legal</strong></p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-  <h2>About Us</h2>
-  <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
-    <img src="images/about-image.jpg" alt="About Get Legal" style="max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-    <div>
-      <p>Welcome to Get Legal, where your financial success is our priority. As a certified tax consultant with over 8 years of experience, we specialize in delivering personalized, strategic tax solutions to individuals, small businesses, and corporations. Our mission is to simplify the complexities of tax planning, compliance, and financial optimization, empowering our clients to achieve their goals with confidence.</p><h4>Our Expertise</h4>
-  <p>At Meesam Haider, we pride ourselves on our deep knowledge of tax laws, regulations, and industry best practices. Our services include:</p>
-  <ul>
-    <li><strong>Tax Planning and Strategy</strong>: Proactive solutions to minimize tax liabilities.</li>
-    <li><strong>Tax Preparation and Filing</strong>: Timely preparation of federal, state, and local tax returns.</li>
-    <li><strong>Business Tax Consulting</strong>: Tailored guidance for all types of enterprises.</li>
-    <li><strong>IRS Representation and Audit Support</strong>: Professional support during audits or disputes.</li>
-    <li><strong>Estate and Trust Planning</strong>: Strategies to preserve wealth and ensure asset transfers.</li>
-    <li><strong>Specialized Tax Services</strong>: International taxation, real estate, industry incentives, etc.</li>
-  </ul>
-
-  <h4>Why Choose Us?</h4>
-  <ul>
-    <li><strong>Experience You Can Trust</strong></li>
-    <li><strong>Certified Excellence</strong></li>
-    <li><strong>Personalized Service</strong></li>
-    <li><strong>Proactive Guidance</strong></li>
-    <li><strong>Commitment to Education</strong></li>
-  </ul>
-
-  <h4>Our Commitment to You</h4>
-  <p>We’re more than just tax consultants—we’re your partners in financial success. From meticulous preparation to strategic planning, we’re here to help you achieve your financial aspirations with confidence and care.</p>
-
-  <h4>Let’s Get Started</h4>
-  <p>Whether you’re seeking to streamline your taxes or grow your business, Get Legal is here to help. <strong>Contact us today</strong> to schedule a consultation.</p>
-</div>
-
-  </div>
-</section><!-- Make sure to place 'about-image.jpg' inside the images/ folder of your GitHub repository -->
-
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tax Consultancy Website</title>
+  <title>Get Legal - Tax Consultant</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #f5f5f5;
     }
-    header, footer {
-      background: #333;
-      color: #fff;
+    header {
+      background-color: #2c3e50;
+      color: white;
       padding: 1em;
       text-align: center;
     }
     nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #444;
+      justify-content: center;
+      background: #34495e;
+    }
+    nav a {
       color: white;
-      padding: 0.5em 1em;
-    }
-    nav .logo {
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-    }
-    nav ul li {
-      cursor: pointer;
+      padding: 1em;
+      text-decoration: none;
     }
     section {
       padding: 2em;
-      max-width: 1000px;
-      margin: auto;
     }
-    .floating-btn {
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .about-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .floating-button {
       position: fixed;
-      bottom: 20px;
-      padding: 10px 15px;
-      color: #fff;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      background-color: #25d366;
+      color: white;
       border-radius: 50%;
       text-align: center;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 1000;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
+      text-decoration: none;
     }
-    .whatsapp {
-      right: 20px;
-      background: #25D366;
-    }
-    .call {
+    .call-button {
       left: 20px;
-      background: #007bff;
+      background-color: #007bff;
     }
-    img {
-      max-width: 100%;
+    .whatsapp-button {
+      right: 20px;
     }
   </style>
 </head><body>
   <header>
-    <h1>Welcome to Your Tax Consultancy</h1>
+    <h1>Welcome to Get Legal</h1>
+    <p>Your Trusted Tax Consultant</p>
   </header>  <nav>
-    <div class="logo">Tax Consultant</div>
-    <ul>
-      <li onclick="location.href='#about'">About Us</li>
-      <li onclick="location.href='#services'">Services</li>
-      <li onclick="location.href='#reviews'">Reviews</li>
-      <li onclick="location.href='#articles'">Articles</li>
-    </ul>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
   </nav>  <section id="about">
     <h2>About Us</h2>
-    <img src="images/tax-consultant.jpg" alt="Tax Consultant" style="width: 300px; border-radius: 10px; margin: 15px 0;">
-    <p>
-      Welcome to <strong>Your Tax Consultancy</strong>, where precision meets professionalism. With over 15 years of
-      experience in tax and finance, we are committed to helping individuals and businesses navigate the complexities
-      of taxation, registrations, and compliance.
-    </p>
-    <p>
-      From Income Tax Returns to GST Filing, Company Registration, MSME Loans, and more — our goal is to simplify your
-      financial tasks so you can focus on growth. Trust us to handle your numbers like they're our own.
-    </p>
+    <div class="about-container">
+      <img src="https://meesam11.github.io/Get-Legal/about.jpg" alt="About Us">
+      <div class="about-text">
+        <p>Welcome to Get Legal, where your financial success is our priority. As a certified tax consultant, we provide personalized, strategic tax solutions for individuals and businesses. Our mission is to simplify complex tax matters and help you succeed financially.</p>
+      </div>
+    </div>
   </section>  <section id="services">
-    <h2>Our Services</h2>
+    <h2>Services</h2>
     <ul>
-      <li>Income Tax Return</li>
-      <li>GSTIN Registration</li>
+      <li>Tax Planning and Strategy</li>
       <li>GST Return Filing</li>
-      <li>GST Correction</li>
-      <li>E-way Bill</li>
-      <li>Digital Signature</li>
-      <li>Company Registration</li>
-      <li>MSME Registration & Loan</li>
-      <li>Trademark</li>
-      <li>All Accounting Work</li>
-      <li>TDS Work</li>
-      <li>PAN Card</li>
-      <li>Trade Licence</li>
-      <li>Labour Licence</li>
-      <li>Shop & Establishment</li>
-      <li>Import Export Code - IEC</li>
-      <li>LLP Registration</li>
-      <li>Society Registration</li>
-      <li>GEM Registration</li>
+      <li>Income Tax Filing</li>
+      <li>Business Registrations</li>
+      <li>Accounting and Financial Statements</li>
+      <li>Audit and Assurance</li>
+      <li>Startup Compliance</li>
     </ul>
-  </section>  <section id="reviews">
-    <h2>Client Reviews</h2>
-    <p>No reviews yet. Coming soon!</p>
-  </section>  <section id="articles">
-    <h2>Financial Articles</h2>
-    <p>Stay tuned for our expert insights on tax laws, financial planning, and more.</p>
-  </section>  <footer>
-    <p>&copy; 2025 Your Tax Consultancy. All rights reserved.</p>
-  </footer>  <div class="floating-btn whatsapp" onclick="window.location.href='https://wa.me/91xxxxxxxxxx'">WA</div>
-  <div class="floating-btn call" onclick="window.location.href='tel:+91xxxxxxxxxx'">Call</div>
-</body></html>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+    <p>Email: <a href="mailto:getlegal@example.com">getlegal@example.com</a></p>
+  </section><a href="tel:+919876543210" class="floating-button call-button">☎</a> <a href="https://wa.me/919876543210" class="floating-button whatsapp-button">💬</a>
 
-  <a href="tel:+919450424530" class="call-button">Call Us</a>
-    <p><strong>Phone:</strong> 9450424530</p>
-    <p><strong>Email:</strong> <a href="mailto:haidermeesam65@gmail.com">haidermeesam65@gmail.com</a></p>
-    <a href="https://wa.me/919450424530" class="whatsapp-button" target="_blank">WhatsApp</a>
-    <form action="https://formsubmit.co/haidermeesam65@gmail.com" method="POST" style="display:flex;flex-direction:column;max-width:400px;">
-      <input type="text" name="name" placeholder="Your Name" required style="margin-bottom:10px;padding:10px;">
-      <input type="email" name="email" placeholder="Your Email" required style="margin-bottom:10px;padding:10px;">
-      <textarea name="message" placeholder="Your Message" required style="margin-bottom:10px;padding:10px;"></textarea>
-      <button type="submit" style="padding:10px;background:#007bff;color:white;border:none;">Send Message</button>
-    </form>
-  </section>
-git add .
-git commit -m "Fixed About Us, Call, and WhatsApp issues"
-git push origin main
-  <footer>
-    <p>&copy; 2025 Get Legal. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+</body></html>
