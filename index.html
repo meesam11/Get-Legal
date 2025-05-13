@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get Legal - Tax Consultant</title>
@@ -7,94 +9,131 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      line-height: 1.6;
     }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 1em;
-      text-align: center;
+    header, section, footer {
+      padding: 20px;
+      margin: 10px;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      background: #34495e;
+      background: #333;
+      color: #fff;
+      padding: 10px;
     }
-    nav a {
-      color: white;
-      padding: 1em;
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      padding: 5px 10px;
+    }
+    nav ul li a {
+      color: #fff;
       text-decoration: none;
     }
-    section {
-      padding: 2em;
-    }
-    .about-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-    }
-    .about-container img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .about-text {
-      flex: 1;
-    }
-    .floating-button {
+    .fab {
       position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      background-color: #25d366;
-      color: white;
+      bottom: 20px;
+      padding: 10px 15px;
       border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      z-index: 999;
       text-align: center;
-      font-size: 30px;
-      line-height: 60px;
-      z-index: 100;
-      text-decoration: none;
     }
-    .call-button {
-      left: 20px;
-      background-color: #007bff;
-    }
-    .whatsapp-button {
+    .whatsapp {
+      background: #25D366;
       right: 20px;
     }
+    .call {
+      background: #007bff;
+      left: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    form input, form textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+    .articles article {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    img.about-img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
-</head><body>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#query">Query Form</a></li>
+      <li><a href="#articles">Finance Articles</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Welcome to Get Legal</h1>
-    <p>Your Trusted Tax Consultant</p>
-  </header>  <nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>  <section id="about">
-    <h2>About Us</h2>
-    <div class="about-container">
-      <img src="https://meesam11.github.io/Get-Legal/about.jpg" alt="About Us">
-      <div class="about-text">
-        <p>Welcome to Get Legal, where your financial success is our priority. As a certified tax consultant, we provide personalized, strategic tax solutions for individuals and businesses. Our mission is to simplify complex tax matters and help you succeed financially.</p>
-      </div>
-    </div>
-  </section>  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Tax Planning and Strategy</li>
-      <li>GST Return Filing</li>
-      <li>Income Tax Filing</li>
-      <li>Business Registrations</li>
-      <li>Accounting and Financial Statements</li>
-      <li>Audit and Assurance</li>
-      <li>Startup Compliance</li>
-    </ul>
-  </section>  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: <a href="tel:+919450424530">+91 9450424530</a></p>
-    <p>Email: <a href="mailto: haidermeesam65@gmail.com.com">haidermeesam65@gmail.com.com</a></p>
-  </section><a href="tel:+919450424530" class="floating-button call-button">☎</a> <a href="https://wa.me/919450424530" class="floating-button whatsapp-button">💬</a>
+  </header>
 
-</body></html>
+  <section id="about">
+    <h2>About Us</h2>
+    <img src="images/about.jpg" alt="About Image" class="about-img" />
+    <p>Welcome to Get Legal, where your financial success is our priority. We are certified tax consultants providing personalized, strategic tax solutions to individuals, businesses, and corporations. Our goal is to simplify tax complexities and help you achieve financial clarity and confidence.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Tax Return Services: GST, ITR, TDS, Advance Tax</li>
+      <li>Business & Tax Registrations: GST, PAN, TAN, LLP, Pvt Ltd</li>
+      <li>Accounting: Bookkeeping, Balance Sheet, Profit & Loss</li>
+      <li>Compliance & Planning: GST, Tax Planning, Transfer Pricing</li>
+      <li>Business Advisory: Setup, Forecasting, Loan Support</li>
+      <li>Audits: Statutory, Internal, GST Audits</li>
+      <li>Specialized: Startups, NGOs, Real Estate Tax, Import/Export</li>
+    </ul>
+  </section>
+
+  <section id="query">
+    <h2>Have a Query?</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="articles">
+    <h2>Finance Articles</h2>
+    <div class="articles">
+      <article>
+        <h3>Top 5 Tax-Saving Investments</h3>
+        <p>Explore ELSS, PPF, NPS and more under Section 80C to reduce your tax burden efficiently.</p>
+      </article>
+      <article>
+        <h3>Small Business Tax Checklist 2025</h3>
+        <p>Stay compliant with quarterly GST, advance tax payments, and more using this simple checklist.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Get Legal. All rights reserved.</p>
+  </footer>
+
+  <a href="tel:+919450424530" class="fab call">Call</a>
+  <a href="https://wa.me/919450424530" target="_blank" class="fab whatsapp">Chat</a>
+</body>
+</html>
