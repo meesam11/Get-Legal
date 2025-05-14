@@ -2,95 +2,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Legal - Tax Consultant</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Get Legal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #003366; color: white; padding: 1rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    .menu-button { display: none; font-size: 1.5rem; cursor: pointer; }
-    .menu { display: flex; }
-    @media(max-width: 768px) {
-      .menu { display: none; flex-direction: column; }
-      .menu-button { display: block; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
     }
-    .section { padding: 2rem; }
-    .card { background: white; padding: 1rem; margin: 1rem 0; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .fab { position: fixed; bottom: 20px; padding: 10px 15px; border-radius: 50%; color: white; font-size: 1.2rem; text-decoration: none; }
-    .call { left: 20px; background: #007BFF; }
-    .whatsapp { right: 20px; background: #25D366; }
+    section {
+      padding: 60px 0;
+    }
+    h2 {
+      color: #007bff;
+      font-weight: bold;
+    }
+    .card {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .testimonial {
+      font-style: italic;
+    }
   </style>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
 </head>
 <body>
-  <header>
-    <div><strong>Welcome to Get Legal</strong></div>
-    <div class="menu-button" onclick="toggleMenu()">☰</div>
-    <nav class="menu" id="menu">
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#articles">Finance Articles</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#query">Query Form</a>
-    </nav>
-  </header>  <section id="about" class="section">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome to Get Legal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#articles">Finance Articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#form">Query Form</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- About Section -->  <section id="about" class="container">
     <h2>About Us</h2>
-    <div class="card">
-      <img src="about.jpg" alt="Tax Consultant" style="width:100%; height:auto;">
-      <p>Welcome to Get Legal, where your financial success is our priority. We specialize in delivering personalized, strategic tax solutions to individuals, small businesses, and corporations.</p>
-    </div>
-  </section>  <section id="services" class="section">
+    <p>We are a certified tax consultancy firm providing expert legal and tax solutions for individuals and businesses alike. With a strong commitment to excellence and trust, Get Legal offers personalized tax planning, compliance, and advisory services tailored to your needs.</p>
+  </section>  <!-- Services Section -->  <section id="services" class="container">
     <h2>Our Services</h2>
-    <div class="card">
-      <ul>
-        <li>Tax Planning and Filing</li>
-        <li>GST Return Services</li>
-        <li>Business Registrations</li>
-        <li>Accounting and Compliance</li>
-        <li>Audit and Assurance</li>
-      </ul>
-    </div>
-  </section>  <section id="articles" class="section">
+    <ul>
+      <li>Income Tax Filing</li>
+      <li>GST Return Filing</li>
+      <li>Business Registration</li>
+      <li>Accounting and Bookkeeping</li>
+      <li>Tax Advisory and Audit Support</li>
+    </ul>
+  </section>  <!-- Finance Articles Section -->  <section id="articles" class="container">
     <h2>Finance Articles</h2>
-    <div class="card">
-      <p><strong>How to Save Tax in 2025:</strong> Read our expert tips on deductions, exemptions, and smart investments.</p>
+    <div class="card p-3">
+      <h5>5 Tax Saving Tips for Small Businesses</h5>
+      <p>Discover key strategies to reduce your tax liabilities and improve financial health.</p>
     </div>
-  </section>  <section id="testimonials" class="section">
+    <div class="card p-3">
+      <h5>Understanding GST for Freelancers</h5>
+      <p>Freelancers, here's what you need to know about your GST obligations.</p>
+    </div>
+  </section>  <!-- Query Form Section -->  <section id="form" class="container">
+    <h2>Have a Query?</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>  <!-- Testimonials Section -->  <section id="testimonials" class="container">
     <h2>What Our Clients Say</h2>
-    <div class="card">
-      <p>"Excellent tax service! Saved me time and money. Highly recommended."</p>
-      <strong>- Ayesha Khan</strong>
+    <div class="card p-3">
+      <p class="testimonial">"Get Legal handled my taxes with utmost professionalism. Highly recommend!" – A. Sharma</p>
     </div>
-    <div class="card">
-      <p>"Very professional and helpful team. Great for startups."</p>
-      <strong>- Rahul Mehta</strong>
+    <div class="card p-3">
+      <p class="testimonial">"Efficient, reliable, and knowledgeable – I’ve been with them for years!" – R. Khan</p>
     </div>
-  </section>  <section id="query" class="section">
-    <h2>Send a Query</h2>
-    <div class="card">
-      <form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
-        <label>Query:</label><br>
-        <textarea name="message" rows="4" cols="50"></textarea><br><br>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>  <!-- Floating Action Buttons --><a href="tel:+919450424530" class="fab call">Call</a> <a href="https://wa.me/919450424530" target="_blank" class="fab whatsapp">Chat</a>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-  </script></body>
+  </section>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
