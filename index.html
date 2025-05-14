@@ -1,139 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Legal - Tax Consultant</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #003366; color: white; padding: 1rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .menu-button { display: none; font-size: 1.5rem; cursor: pointer; }
+    .menu { display: flex; }
+    @media(max-width: 768px) {
+      .menu { display: none; flex-direction: column; }
+      .menu-button { display: block; }
     }
-    header, section, footer {
-      padding: 20px;
-      margin: 10px;
-    }
-    nav {
-      background: #333;
-      color: #fff;
-      padding: 10px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      padding: 5px 10px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .fab {
-      position: fixed;
-      bottom: 20px;
-      padding: 10px 15px;
-      border-radius: 50%;
-      color: white;
-      font-size: 20px;
-      z-index: 999;
-      text-align: center;
-    }
-    .whatsapp {
-      background: #25D366;
-      right: 20px;
-    }
-    .call {
-      background: #007bff;
-      left: 20px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-    }
-    form input, form textarea {
-      margin-bottom: 10px;
-      padding: 8px;
-    }
-    .articles article {
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    img.about-img {
-      max-width: 100%;
-      height: auto;
-    }
+    .section { padding: 2rem; }
+    .card { background: white; padding: 1rem; margin: 1rem 0; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .fab { position: fixed; bottom: 20px; padding: 10px 15px; border-radius: 50%; color: white; font-size: 1.2rem; text-decoration: none; }
+    .call { left: 20px; background: #007BFF; }
+    .whatsapp { right: 20px; background: #25D366; }
   </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#query">Query Form</a></li>
-      <li><a href="#articles">Finance Articles</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h1>Welcome to Get Legal</h1>
-  </header>
-
-  <section id="about">
+    <div><strong>Welcome to Get Legal</strong></div>
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#articles">Finance Articles</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#query">Query Form</a>
+    </nav>
+  </header>  <section id="about" class="section">
     <h2>About Us</h2>
-    <img src="images/about.jpg" alt="About Image" class="about-img" />
-    <p>Welcome to Get Legal, where your financial success is our priority. We are certified tax consultants providing personalized, strategic tax solutions to individuals, businesses, and corporations. Our goal is to simplify tax complexities and help you achieve financial clarity and confidence.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Tax Return Services: GST, ITR, TDS, Advance Tax</li>
-      <li>Business & Tax Registrations: GST, PAN, TAN, LLP, Pvt Ltd</li>
-      <li>Accounting: Bookkeeping, Balance Sheet, Profit & Loss</li>
-      <li>Compliance & Planning: GST, Tax Planning, Transfer Pricing</li>
-      <li>Business Advisory: Setup, Forecasting, Loan Support</li>
-      <li>Audits: Statutory, Internal, GST Audits</li>
-      <li>Specialized: Startups, NGOs, Real Estate Tax, Import/Export</li>
-    </ul>
-  </section>
-
-  <section id="query">
-    <h2>Have a Query?</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <section id="articles">
-    <h2>Finance Articles</h2>
-    <div class="articles">
-      <article>
-        <h3>Top 5 Tax-Saving Investments</h3>
-        <p>Explore ELSS, PPF, NPS and more under Section 80C to reduce your tax burden efficiently.</p>
-      </article>
-      <article>
-        <h3>Small Business Tax Checklist 2025</h3>
-        <p>Stay compliant with quarterly GST, advance tax payments, and more using this simple checklist.</p>
-      </article>
+    <div class="card">
+      <img src="about.jpg" alt="Tax Consultant" style="width:100%; height:auto;">
+      <p>Welcome to Get Legal, where your financial success is our priority. We specialize in delivering personalized, strategic tax solutions to individuals, small businesses, and corporations.</p>
     </div>
-  </section>
+  </section>  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="card">
+      <ul>
+        <li>Tax Planning and Filing</li>
+        <li>GST Return Services</li>
+        <li>Business Registrations</li>
+        <li>Accounting and Compliance</li>
+        <li>Audit and Assurance</li>
+      </ul>
+    </div>
+  </section>  <section id="articles" class="section">
+    <h2>Finance Articles</h2>
+    <div class="card">
+      <p><strong>How to Save Tax in 2025:</strong> Read our expert tips on deductions, exemptions, and smart investments.</p>
+    </div>
+  </section>  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="card">
+      <p>"Excellent tax service! Saved me time and money. Highly recommended."</p>
+      <strong>- Ayesha Khan</strong>
+    </div>
+    <div class="card">
+      <p>"Very professional and helpful team. Great for startups."</p>
+      <strong>- Rahul Mehta</strong>
+    </div>
+  </section>  <section id="query" class="section">
+    <h2>Send a Query</h2>
+    <div class="card">
+      <form>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <label>Query:</label><br>
+        <textarea name="message" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>  <!-- Floating Action Buttons --><a href="tel:+919999999999" class="fab call">Call</a> <a href="https://wa.me/919999999999" target="_blank" class="fab whatsapp">Chat</a>
 
-  <footer>
-    <p>&copy; 2025 Get Legal. All rights reserved.</p>
-  </footer>
-
-  <a href="tel:+919450424530" class="fab call">Call</a>
-  <a href="https://wa.me/919450424530" target="_blank" class="fab whatsapp">Chat</a>
-</body>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script></body>
 </html>
