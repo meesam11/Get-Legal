@@ -1,94 +1,108 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Legal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meesam| Get Legal</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #1e88e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
     section {
-      padding: 60px 0;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
     h2 {
-      color: #007bff;
-      font-weight: bold;
+      color: #1e88e5;
     }
-    .card {
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+    .button {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
+      background: #43a047;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
     }
-    .testimonial {
-      font-style: italic;
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Welcome to Get Legal</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">Finance Articles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#form">Query Form</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>  <!-- About Section -->  <section id="about" class="container">
-    <h2>About Us</h2>
-    <p>We are a certified tax consultancy firm providing expert legal and tax solutions for individuals and businesses alike. With a strong commitment to excellence and trust, Get Legal offers personalized tax planning, compliance, and advisory services tailored to your needs.</p>
-  </section>  <!-- Services Section -->  <section id="services" class="container">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Income Tax Filing</li>
-      <li>GST Return Filing</li>
-      <li>Business Registration</li>
-      <li>Accounting and Bookkeeping</li>
-      <li>Tax Advisory and Audit Support</li>
-    </ul>
-  </section>  <!-- Finance Articles Section -->  <section id="articles" class="container">
-    <h2>Finance Articles</h2>
-    <div class="card p-3">
-      <h5>5 Tax Saving Tips for Small Businesses</h5>
-      <p>Discover key strategies to reduce your tax liabilities and improve financial health.</p>
-    </div>
-    <div class="card p-3">
-      <h5>Understanding GST for Freelancers</h5>
-      <p>Freelancers, here's what you need to know about your GST obligations.</p>
-    </div>
-  </section>  <!-- Query Form Section -->  <section id="form" class="container">
-    <h2>Have a Query?</h2>
-    <form>
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="3" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </section>  <!-- Testimonials Section -->  <section id="testimonials" class="container">
-    <h2>What Our Clients Say</h2>
-    <div class="card p-3">
-      <p class="testimonial">"Get Legal handled my taxes with utmost professionalism. Highly recommend!" – A. Sharma</p>
-    </div>
-    <div class="card p-3">
-      <p class="testimonial">"Efficient, reliable, and knowledgeable – I’ve been with them for years!" – R. Khan</p>
-    </div>
-  </section>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
+
+<header>
+  <h1> Get Legal Bookkeeping for US & UK Small Businesses</h1>
+  <p>Reliable | Affordable | Remote</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I’m Ishan, a B.Com graduate with 4+ years of experience working at a Chartered Accountant firm in India. 
+    I now provide virtual bookkeeping services to startups, small businesses, and online sellers in the US and UK — helping them manage their accounts at 70% lower cost than local firms.
+  </p>
+</section>
+
+<section>
+  <h2>Services</h2>
+
+  <h3>🇺🇸 For US Clients</h3>
+  <ul>
+    <li>Monthly Bookkeeping (QuickBooks Online / Xero)</li>
+    <li>Bank & Credit Card Reconciliation</li>
+    <li>Expense Categorization</li>
+    <li>1099 Summary Assistance</li>
+  </ul>
+
+  <h3>🇬🇧 For UK Clients</h3>
+  <ul>
+    <li>Bookkeeping & VAT Returns</li>
+    <li>Self-Assessment Support</li>
+    <li>eCommerce Accounting (Amazon, Shopify)</li>
+  </ul>
+
+  <p><strong>Starting at $100/month – Free Consultation Available</strong></p>
+
+  <a href="https://wa.me/919450424530" class="button">Chat on WhatsApp</a>
+  <a href="https://calendly.com/yourname" class="button" style="background:#f57c00;">Book a Call</a>
+</section>
+
+<section>
+  <h2>Why Choose Me?</h2>
+  <ul>
+    <li>4+ Years CA Firm Experience</li>
+    <li>QuickBooks & Xero Proficiency</li>
+    <li>Flexible Timing & Affordable Pricing</li>
+    <li>100% Remote & Secure Service</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Meesam – Get Legal 
+</footer>
+
+</body>
 </html>
